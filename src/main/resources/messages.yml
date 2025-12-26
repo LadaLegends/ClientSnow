@@ -14,4 +14,4 @@ no-permission: "&fYou do not have permission to execute this command."
 usage: "&fUsage: &7/clientsnow <enable|disable|reload>"
 
 update-available: "&fNew update available: &#47ceffv%version%"
-update-link: "&fDownload: &#47ceffhttps://spigotmc.org/resources/..."
+update-link: "&fDownload: &#47ceffhttps://modrinth.com/plugin/clientsnow"
