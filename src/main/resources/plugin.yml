@@ -1,0 +1,21 @@
+name: ClientSnow
+version: '${project.version}'
+main: com.ladalegends.clientSnow.ClientSnow
+api-version: '1.21'
+authors: [LadaLegends]
+license: MIT
+description: High-performance asynchronous snow effect plugin.
+
+commands:
+  clientsnow:
+    description: Main control command
+    usage: /clientsnow <enable|disable|reload>
+    permission: clientsnow.toggle
+
+permissions:
+  clientsnow.toggle:
+    description: Allows player to change the display of snow effects
+    default: op
+  clientsnow.admin:
+    description: Administration access
+    default: op

@@ -1,0 +1,17 @@
+# ==========================================
+#         ClientSnow Localization
+# ==========================================
+
+# Prefix before all messages (supports HEX)
+prefix: "&#47ceff☃ "
+
+reload-success: "&fConfiguration reloaded successfully."
+
+snow-disabled: "&fSnow visibility has been &cdisabled&f."
+snow-enabled: "&fSnow visibility has been &#47ceffenabled&f."
+
+no-permission: "&fYou do not have permission to execute this command."
+usage: "&fUsage: &7/clientsnow <enable|disable|reload>"
+
+update-available: "&fNew update available: &#47ceffv%version%"
+update-link: "&fDownload: &#47ceffhttps://spigotmc.org/resources/..."

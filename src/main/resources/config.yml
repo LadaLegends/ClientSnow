@@ -1,0 +1,31 @@
+# ==========================================
+#         ClientSnow Configuration
+# ==========================================
+
+system:
+  # Should anonymous statistics be sent to bstats.org
+  metrics: true
+  # Check for new versions at startup
+  update-checker: true
+
+snow-settings:
+  # Global toggle for the system
+  enabled: true
+  # Particle type. Options: SNOWFLAKE, SNOW_SHOVEL, WHITE_ASH
+  particle-type: "SNOWFLAKE"
+  # Radius around the player to spawn particles
+  radius: 20.0
+  # Base height above player head where snow starts
+  spawn-height: 8.0
+  # Particles per update cycle per player.
+  # Higher values = denser snow but more client GPU load.
+  count-per-tick: 25
+
+requirements:
+  # If true, snow only spawns if sky is visible (simple check)
+  outdoor-only: true
+
+optimization:
+  # Task execution rate in ticks (1 tick = 50ms).
+  # Increase to 2 or 4 to reduce server load slightly, though animation might feel less fluid.
+  update-rate: 2
