@@ -1,4 +1,7 @@
 ![banner](https://cdn.modrinth.com/data/cached_images/716a57ee89f219972c4fb7240b6bc65810df8951.png)
+
+![minecraft 1.21+](https://img.shields.io/badge/minecraft-1.21%2B-green) ![paper required](https://img.shields.io/badge/paper-required-red) ![license MIT](https://img.shields.io/badge/license-MIT-blue) 
+
 <details>
 <summary>Screenshot</summary>
 
@@ -9,10 +12,10 @@
 ## About
 **Enhance your server's atmosphere with lightweight, client-side snowfall.**
 
-ClientSnow is a high-performance particle plugin designed for modern Minecraft servers. Unlike traditional weather systems, this plugin handles particle spawning asynchronously, ensuring **0.00ms impact on your server's TPS**.
+ClientSnow is a high-performance particle plugin designed for modern Minecraft servers. Unlike traditional weather systems, this plugin handles particle spawning asynchronously.
 
 ## Features
-- **Fully Asynchronous**: All calculations, player logic, and particle spawning are handled by the modern Paper AsyncScheduler. This ensures 0.00ms impact on your MSPT/TPS.
+- **Asynchronous Engine**: Built on Paper's AsyncScheduler, offloading all particle logic to separate threads to maintain a perfect 20.0 TPS even on high-population servers.
 - **Minimal RAM Footprint**: The plugin uses primitive-based math and avoids object allocation in the main loop, making it virtually invisible to the Garbage Collector.
 - **Zero Lag Architecture**: All calculations and particle spawning happen in separate threads.
 - **Player Control**: Users can toggle snow for themselves with /clientsnow enable|disable.
@@ -26,10 +29,12 @@ ClientSnow is a high-performance particle plugin designed for modern Minecraft s
 2. Restart your server to generate the configuration files.
 
 ## Commands & Permissions
-- **/clientsnow enable**: Turn on snow effects. _clientsnow.toggle_ (default)
-- **/clientsnow disable**: Turn off snow effects. _clientsnow.toggle_ (default)
-- **/clientsnow reload**: Reload configuration. _clientsnow.admin_ (op)
 
+| Command             | Description            | Permission        | Default |
+|---------------------|------------------------|--------------------|---------|
+| /clientsnow enable  | Turn on snow effects.  | clientsnow.toggle | true    |
+| /clientsnow disable | Turn off snow effects. | clientsnow.toggle | true    |
+| /clientsnow reload  | Reload configuration.  | clientsnow.admin  | OP      |
 
 <details>
 <summary>And also...</summary>
@@ -97,7 +102,7 @@ no-permission: "&fYou do not have permission to execute this command."
 usage: "&fUsage: &7/clientsnow <enable|disable|reload>"
 
 update-available: "&fNew update available: &#47ceffv%version%"
-update-link: "&fDownload: &#47ceffhttps://spigotmc.org/resources/..."
+update-link: "&fDownload: &#47ceffhttps://modrinth.com/plugin/clientsnow"
 ```
 
 </details>
@@ -108,4 +113,3 @@ update-link: "&fDownload: &#47ceffhttps://spigotmc.org/resources/..."
 We use bStats to track anonymous data such as the number of servers and players using the plugin. This helps us improve the project! You can disable this in the config if needed.
 
 </details>
-
